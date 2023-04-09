@@ -5,12 +5,14 @@ const bodyParser = require("body-parser");
 var crypto = require("crypto");
 const md5 = require("md5");
 const bcrypt = require("bcrypt");
+const dotenv = require("dotenv");
+dotenv.config();
 // setting up the various modules
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 // variables used
-const port = 3000;
+const port = 3000 || process.env.PORT;
 const algorithm = "aes-256-cbc";
 const key = crypto.randomBytes(32);
 const iv = crypto.randomBytes(16);
@@ -88,7 +90,7 @@ app.get("/decrypt", (req, res) => {
     text: text,
     password: password,
     crypted_text: crypted.encryptedData,
-    algo_type: algoType, 
+    algo_type: algoType,
     decrypted_text: decrypted_text
   });
 });
