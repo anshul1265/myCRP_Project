@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+/* General/Mobile version */
+body {
+  padding: 5.5vw;
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+  margin-left:2.5rem;
+  margin-right:2.5rem;
+  overflow: show;
+  background: url("https://quixtack.dewanmukto.repl.co/assets/tanck/wallpaper(3).png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 4vw;
+}
+h2 {
+  font-family: 'Yeseva One', display;
+  color: #6c42f6;
+}
+p {
+  color: #6c42f6;
+}
+a {
+  text-decoration: none;
+  color: #6c42f6;
+}
+.main {
+  background: #deddda;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 25px;
+  transition: 0.3s;
+  opacity: 0.63;
+  padding: 2px;
+  text-align: center;
+}
+.main:hover{
+  opacity:0.97;
+  scale:1.01;
+}
+.section {
+  padding: 1px;
+  border-radius: 25px;
+  transition: 0.3s;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  margin-right: 6px;
+  margin-left: 6px;
+  opacity: 0.93;
+}
+.profile-pic{
+  border-radius:360px;
+  width: 60vw;
+}
+.social-btn {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 25px;
+  transition: 0.3s;
+  width: 6rem;
+  height: 6rem;
+  float: center;
+  font-size: 1.2rem;
+}
+.real-btn{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 15px;
+  transition: 0.3s;
+  width: 26vw;
+  height: 6rem;
+  font-size: 4vw;
+  color: #9141ac;
+}
+.price-btn{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 12px;
+  border-radius: 15px;
+  transition: 0.3s;
+  width: 90%;
+  font-size: 3vw;
+  text-align: center;
+}
+.price-btn a {
+  text-decoration: none;
+  color: #000000;
+}
+.social-btn:hover, .real-btn:hover, .price-btn:hover {
+  border-radius: 15px;
+  opacity: 0.8;
+  scale: 1.21;
+  background: white;
+}
+.social-btn:active, .real-btn:active, .price-btn:active {
+  background-color: #6c42f6;
+  color: #ffffff;
+  transform: translateY(2px);
+}
+.fa-brands,.fa-solid, .fa-regular {
+  scale: 4vw;
+  position:relative;
+}
+.row {
+  display: grid;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column-50 {
+  flex:50%;
+}
+.column-25 {
+  width: 25%;
+}
+.column-75 {
+  width: 75%;
+  float:center;
+}
+.footer {
+  border-radius:12px;
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 2.0rem;
+  position: relative;
+  opacity:0.2;
+  margin-bottom: 10px;
+  scale:1;
+  transition:0.5s;
+}
+.footer:hover{
+  opacity: 0.5;
+  scale:1.01;
+}
+.marquee {
+  font-family: 'Ubuntu Mono', monospace;
+  color: red;
+  border-radius: 12px;
+  border-style: dashed;
+}
+/* End of General/Mobile version */
+/*
+*
+*
+*
+*/
+@media (min-width: 700px) {
+  /* Desktop version */
+  body {
+  padding: 10.5vw;
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+  margin-left:2.5rem;
+  margin-right:2.5rem;
+  overflow: show;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2vw;
+}
+  .main {
+  background: #deddda;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 25px;
+  transition: 0.3s;
+  opacity: 0.63;
+  padding: 20px;
+  text-align: center;
+}
+  .profile-pic{
+  border-radius:360px;
+  width: 20vw;
+}
+  .row {
+  display: flex;
+}
+  .social-btn {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 25px;
+  transition: 0.3s;
+  width: 6rem;
+  height: 6rem;
+  float: center;
+  font-size: 1.2rem;
+}
+.real-btn{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 15px;
+  padding: 12px;
+  transition: 0.3s;
+  width: 26vw;
+  font-size: 2vw;
+  text-align: center;
+}
+.price-btn{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 12px;
+  border-radius: 15px;
+  transition: 0.3s;
+  width: 90%;
+  font-size: 2vw;
+  text-align: center;
+}
+.price-btn a {
+  text-decoration: none;
+}
+.social-btn:hover, .real-btn:hover, .price-btn:hover {
+  border-radius: 15px;
+  opacity: 0.8;
+  scale: 1.21;
+  background: white;
+}
+.social-btn:active, .real-btn:active, .price-btn:active {
+  background-color: #6c42f6;
+  color: #ffffff;
+  transform: translateY(2px);
+}
+.fa-brands,.fa-solid, .fa-regular {
+  scale: 2vw;
+  position:relative;
+}
+  /* End of Desktop version*/
+}
